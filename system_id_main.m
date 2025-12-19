@@ -13,7 +13,7 @@ z = iddata(output, input, 2); % 2-second sampling time
 z_pre = detrend(z);
 
 %% 2. Subspace Identification (4SID)
-% Estimating a state-space model (n=2 based on PDF results)
+% Estimating a state-space model (n=2 )
 sys_ss = n4sid(z_pre, 2); 
 
 %% 3. ARMAX Identification
